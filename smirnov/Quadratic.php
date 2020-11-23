@@ -1,8 +1,11 @@
 <?php
 
-require_once 'Linear.php';
 
-class Quadratic extends Linear
+namespace smirnov;
+use core\Equationinterface;
+//require_once 'smirnov/Linear.php';
+
+class Quadratic extends Linear implements EquationInterface
 {
 
     public function solve($a,$b,$c) {
@@ -21,6 +24,7 @@ class Quadratic extends Linear
         if ($D == 0) {
             return $this->x=[(-$b-sqrt($D))/(2*$a)];
         }
+
     }
     protected function discriminant($a,$b,$c) {
         return (pow($b,2)-4*$a*$c);
