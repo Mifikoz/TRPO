@@ -23,6 +23,17 @@ class SmirnovLog extends core\LogAbstract implements core\LogInterface
 
     public function _write() {
         echo implode(SmirnovLog::Instance()->log);
+        $log = '';
+        foreach ($this->log as $log_str) {
+            $log .= $log_str."\n";
+        }
+
+        $date = new \DateTime();
+        $file = "./Log/". $date->format('d.m.Y_H.i.s.v').".log";
+        if (!is_dir('./Log/')) {
+            mkdir("./Log/");
+        }
+        file_put_contents($file,$log);
     }
 
 }
