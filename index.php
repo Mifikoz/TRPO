@@ -14,7 +14,7 @@ require_once 'smirnov/Linear.php';
 require_once 'smirnov/Quadratic.php';
 
 try {
-    SmirnovLog::log(file_get_contents('version'));
+    SmirnovLog::log('Версия программы '.file_get_contents('version'));
     echo "Enter 3 parameters: a, b, c\n\r";
     $a = readline("Enter a value:");
     $b = readline("Enter b value:");
