@@ -1,2 +1,5 @@
-.core
+/Log
+.log
+/core
 .idea
+version
