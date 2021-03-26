@@ -5,13 +5,7 @@ use smirnov\SmirnovException;
 use smirnov\Linear;
 use smirnov\Quadratic;
 
-require_once "core/EquationInterface.php";
-require_once 'core/LogInterface.php';
-require_once 'core/LogAbstract.php';
-require_once "smirnov/SmirnovException.php";
-require_once 'smirnov/SmirnovLog.php';
-require_once 'smirnov/Linear.php';
-require_once 'smirnov/Quadratic.php';
+require_once __DIR__.'/vendor/autoload.php';
 
 try {
     SmirnovLog::log('Версия программы '.file_get_contents('version'));

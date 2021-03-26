@@ -1,0 +1,28 @@
+{
+  "name":"mifikoz/trpo",
+  "description": "trpo project",
+  "type" : "library",
+  "authors": [
+    {
+      "name": "mifikoz",
+      "email": "makozer@yandex.ru"
+    }
+  ],
+  "scripts": {
+    "pre-install-cmd": "git symbolic-ref --short -q HEAD>version"
+  },
+  "repositories" : [
+    {
+      "type" : "git",
+      "url" : "https://github.com/Mifikoz/smirnov.git"
+    },
+    {
+      "type":"git",
+      "url":"https://github.com/rok9ru/trpo-core.git"
+    }
+  ],
+  "require" : {
+    "php":"^7.3.0",
+    "mifikoz/smirnov" : "^v1.0.2"
+  }
+}
