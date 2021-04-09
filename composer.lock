@@ -8,11 +8,11 @@
     "packages": [
         {
             "name": "mifikoz/smirnov",
-            "version": "v1.1",
+            "version": "v1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mifikoz/smirnov.git",
-                "reference": "bde23d666355995c404cd1412376e9f1b11f7b8e"
+                "reference": "e90f9a229e4aa3abd28333a332ddec409036bb1e"
             },
             "require": {
                 "php": "^7.3.0",
@@ -37,7 +37,7 @@
                 }
             ],
             "description": "core for my trpo project",
-            "time": "2021-04-08T20:48:11+00:00"
+            "time": "2021-04-09T07:02:03+00:00"
         },
         {
             "name": "rok9ru/trpo-core",
